@@ -15,3 +15,13 @@ function writeTodos(todos) {
 }
 
 console.log("📋 TodoConsole prêt !");
+
+const action = process.argv[2];
+const value = process.argv.slice(3).join(' ');
+
+if (action === 'add') {
+  const todos = readTodos();
+  todos.push({ id: Date.now(), title: value, done: false });
+  writeTodos(todos);
+  console.log(`✅ Tâche ajoutée : "${value}"`);
+}
