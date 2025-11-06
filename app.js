@@ -44,4 +44,4 @@ if (action === 'done') {
 if (action === 'clear') {
   writeTodos([]);
   console.log('🧹 Liste vidée');
-}
+}// log ajouté pour le debug
