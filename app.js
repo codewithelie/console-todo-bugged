@@ -40,3 +40,8 @@ if (action === 'done') {
   writeTodos(todos);
   console.log(`🎉 "${value}" est terminée`);
 }
+
+if (action === 'clear') {
+  writeTodos([]);
+  console.log('🧹 Liste vidée');
+}
