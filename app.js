@@ -25,3 +25,9 @@ if (action === 'add') {
   writeTodos(todos);
   console.log(`✅ Tâche ajoutée : "${value}"`);
 }
+
+if (action === 'list') {
+  const todos = readTodos();
+  if (todos.length === 0) return console.log("📭 Aucune tâche.");
+  todos.forEach(t => console.log(`${t.done ? '✔️' : '🕓'} ${t.title}`));
+} 
