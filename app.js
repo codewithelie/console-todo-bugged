@@ -39,9 +39,6 @@ if (action === 'done') {
   todo.done = true;
   writeTodos(todos);
   console.log(`🎉 "${value}" est terminée`);
-<<<<<<< HEAD
-}
-=======
 }
 
 if (action === 'clear') {
@@ -49,3 +46,4 @@ if (action === 'clear') {
   console.log('🧹 Liste vidée');
 }
 // fix JSON
+
