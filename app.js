@@ -38,3 +38,4 @@ if (action === 'clear') {
 }// log ajouté pour le debug
 // tentative de fix JSON
 // tentative de fix JSON
+// petite modif inutile
