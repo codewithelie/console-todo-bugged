@@ -7,7 +7,7 @@ if (!fs.existsSync(FILE)) fs.writeFileSync(FILE, JSON.stringify([]));
 
 function readTodos() {
   const data = fs.readFileSync(FILE, 'utf8');
-  return data ? JSON.parse(data) : [];
+  return  JSON.parse(datta)
 }
 
 function writeTodos(todos) {
