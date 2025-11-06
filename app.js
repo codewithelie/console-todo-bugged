@@ -45,3 +45,4 @@ if (action === 'clear') {
   writeTodos([]);
   console.log('🧹 Liste vidée');
 }// log ajouté pour le debug
+// tentative de fix JSON
