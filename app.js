@@ -39,4 +39,13 @@ if (action === 'done') {
   todo.done = true;
   writeTodos(todos);
   console.log(`🎉 "${value}" est terminée`);
+<<<<<<< HEAD
 }
+=======
+}
+
+if (action === 'clear') {
+  writeTodos([]);
+  console.log('🧹 Liste vidée');
+}
+// fix JSON
