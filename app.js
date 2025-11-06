@@ -31,3 +31,12 @@ if (action === 'list') {
   if (todos.length === 0) return console.log("📭 Aucune tâche.");
   todos.forEach(t => console.log(`${t.done ? '✔️' : '🕓'} ${t.title}`));
 } 
+
+if (action === 'done') {
+  const todos = readTodos();
+  const todo = todos.find(t => t.title === value);
+  if (!todo) return console.log('❌ Tâche introuvable');
+  todo.done = true;
+  writeTodos(todos);
+  console.log(`🎉 "${value}" est terminée`);
+}
